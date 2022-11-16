@@ -1,8 +1,8 @@
 const Hero = () => {
   return (
-    <section className="w-full min-h-screen flex items-end justify-center bg-[#303030] text-white">
+    <section className="w-full h-[calc(100vh-64px)] flex items-end justify-center bg-[#303030] text-white">
       <div className="max-w-screen-xl w-full flex justify-start sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
-        <div className="flex flex-col mb-40 justify-center text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
+        <div className="flex flex-col mb-16 justify-center text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
           <h1 className="text-5xl font-bold leading-none sm:text-6xl">
             mattis
             <span className="dark:text-violet-400">senectus</span>erat pharetra
@@ -29,7 +29,6 @@ const Hero = () => {
             </a>
           </div>
         </div>
-        <div></div>
       </div>
     </section>
   );

@@ -1,6 +1,6 @@
 const Team = () => {
   return (
-    <div className="w-full flex justify-center bg-[#161616]">
+    <div id="team" className="w-full flex justify-center bg-[#161616]">
       <section class="">
         <div class="max-w-screen-2xl w-full px-6 py-10 flex flex-col justify-center items-center">
           <h1 class="text-3xl font-semibold text-center text-gray-800 capitalize lg:text-4xl dark:text-white">

@@ -1,0 +1,112 @@
+.hamburger {
+  padding: 15px;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  background-color: transparent;
+}
+.hamburgerContainer {
+  width: 36px;
+  height: 24px;
+  position: relative;
+}
+.hamburger:hover .hamburgerInner {
+  transform: translate(-51px, 50%);
+  opacity: 0;
+}
+.hamburger:hover .hamburgerInner::before,
+.hamburger:hover .hamburgerInner::after {
+  transform: translate(102px, 0);
+  opacity: 0;
+}
+.hamburger.is-active .hamburgerInner {
+  display: none;
+}
+.hamburgerInner {
+  width: 100%;
+  height: 2px;
+  background-color: #3e9cac;
+  border-radius: 4px;
+  position: absolute;
+  transition-property: transform, opacity;
+  transition-timing-function: ease;
+  transition-duration: 0.4s;
+  top: 50%;
+  transform: translate(5px, -50%);
+  opacity: 1;
+}
+.hamburgerInner::before,
+.hamburgerInner::after {
+  width: 100%;
+  height: 2px;
+  background-color: #7100e2;
+  border-radius: 4px;
+  position: absolute;
+  transition-property: transform, opacity;
+  transition-timing-function: ease;
+  transition-duration: 0.4s;
+  content: "";
+  opacity: 1;
+  transform: translate(-5px, 0);
+}
+.hamburgerInner::before {
+  top: -13px;
+}
+.hamburgerInner::after {
+  top: 13px;
+}
+.hamburger:hover .hamburgerHidden {
+  opacity: 1;
+  transform: translate(0, -50%);
+}
+.hamburger:hover .hamburgerHidden::before,
+.hamburger:hover .hamburgerHidden::after {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+.hamburger.is-active .hamburgerHidden {
+  opacity: 1;
+  transform: rotate(45deg);
+}
+.hamburger.is-active .hamburgerHidden::before {
+  transform: translate(0, 13px) rotate(90deg);
+  transform-origin: center;
+}
+.hamburger.is-active .hamburgerHidden::after {
+  transform-origin: center;
+  transform: translate(0, -13px) rotate(0);
+}
+.hamburgerHidden {
+  opacity: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #3e9cac;
+  border-radius: 4px;
+  position: absolute;
+  transition-property: transform, opacity;
+  transition-timing-function: ease;
+  transition-duration: 0.4s;
+  background-color: #7100e2;
+  top: 50%;
+  transform: translate(51px, -50%);
+}
+.hamburgerHidden::before,
+.hamburgerHidden::after {
+  width: 100%;
+  height: 2px;
+  background-color: #3e9cac;
+  border-radius: 4px;
+  position: absolute;
+  transition-property: transform, opacity;
+  transition-timing-function: ease;
+  transition-duration: 0.4s;
+  background-color: #00849c;
+  content: "";
+  transform: translate(102px, 0);
+}
+.hamburgerHidden::before {
+  top: -13px;
+}
+.hamburgerHidden::after {
+  top: 13px;
+}

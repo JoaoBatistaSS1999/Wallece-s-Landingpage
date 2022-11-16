@@ -1,6 +1,9 @@
 const About = () => {
   return (
-    <div className="w-full flex justify-center py-20 bg-[#161616] text-white">
+    <div
+      id="about"
+      className="w-full flex justify-center py-20 bg-[#161616] text-white"
+    >
       <section className="max-w-screen-2xl w-full flex justify-between items-center">
         <div className="w-[500px] h-[600px] bg-[#3c3c3c] rounded-2xl"></div>
 

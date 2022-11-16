@@ -1,6 +1,7 @@
 import React from "react";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Description from "./components/Description";
 import Footer from "./components/Footer";
 import Gallery from "./components/Gallery";
 import Header from "./components/Header";
@@ -15,6 +16,7 @@ function App() {
       <Header />
       <Hero />
       <About />
+      <Description />
       <Gallery />
       <Roadmap />
       <Technologies />

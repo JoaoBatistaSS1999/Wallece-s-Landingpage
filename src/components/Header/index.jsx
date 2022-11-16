@@ -1,8 +1,14 @@
 import React, { useState } from "react";
+import styles from "./styles.module.css";
 
 import HeaderLogo from "../../Assets/Logos/HeaderLogo.png";
-// import Twitter from "../../assets/social/twitterWhite.png";
-// import Discord from "../../assets/social/discordia.png";
+import AppButton from "../UI/AppButton";
+import HamburgerIcon from "../UI/HamburgerIcon";
+import CloseIcon from "../UI/CloseIcon";
+
+import Twitter from "../../Assets/Social/twitter.png";
+import Telegram from "../../Assets/Social/telegram.png";
+import Discord from "../../Assets/Social/discord.png";
 
 const Header = () => {
   const [nav, setNav] = useState(false);
@@ -14,15 +20,39 @@ const Header = () => {
   return (
     <header className="flex justify-center w-full bg-[#181A1F]">
       <div className="max-w-screen-2xl w-full h-16 flex justify-between items-center font-Orbitron p-4">
-        <h1 className="text-2xl cursor-pointer font-bold text-white flex items-center gap-3 ">
+        <h1 className="text-2xl cursor-pointer font-bold text-white flex items-center gap-5">
           <img src={HeaderLogo} alt="" />
-          <p className="flex justify-end max-h-full font-semibold items-end">
+          <p className="flex justify-end font-thin max-h-full items-end">
             Kristin
           </p>
         </h1>
+        <div className="hidden lg:flex gap-5">
+          <ul className={styles.nav}>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#features">Features</a>
+            </li>
+            <li>
+              <a href="#roadmap">Roadmap</a>
+            </li>
+            <li>
+              <a href="#partners">Partners</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+            <li>
+              <a href="#team">Team</a>
+            </li>
+          </ul>
 
-        <div className="hidden lg:flex justify-center items-center gap-3">
-          <ul className="flex justify-center items-center mr-3 gap-4 text-lg font-semibold text-white">
+          <AppButton />
+        </div>
+
+        {/* <div className="hidden lg:flex justify-center items-center gap-5">
+          <ul className="flex justify-center items-center mr-3 gap-7 text-md font-semibold text-white">
             <a href="#about">
               <li className="hover:text-[#7100E2] hover:underline-offset-4 transition-all ease-in-out duration-500">
                 About
@@ -59,11 +89,12 @@ const Header = () => {
               Launch App
             </button>
           </a>
-        </div>
+        </div> */}
       </div>
       <div className="flex items-center gap-4">
-        <div className="block lg:hidden">
-          <button
+        <div className="flex justify-center items-center lg:hidden">
+          <HamburgerIcon onClick={handleNav} />
+          {/* <button
             onClick={handleNav}
             className="p-2 text-gray-600 bg-gray-100 rounded transition hover:text-gray-600/75"
           >
@@ -81,7 +112,7 @@ const Header = () => {
                 d="M4 6h16M4 12h16M4 18h16"
               />
             </svg>
-          </button>
+          </button> */}
         </div>
         {/* Side Drawer Menu */}
         <div
@@ -94,48 +125,60 @@ const Header = () => {
           <div
             className={
               nav
-                ? "bg-[#000000] fixed z-10 flex flex-col justify-between right-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen text-white p-10 ease-in duration-500"
+                ? "bg-[#000000] fixed z-10 flex flex-col justify-between right-0 bottom-0 top-0 w-[100%] sm:w-[60%] md:w-[45%] h-screen text-white p-10 ease-in duration-500"
                 : "fixed right-[-130%] top-0 p-10 ease-in duration-500"
             }
           >
-            <div className="flex flex-col w-full font-Orbitron items-center justify-between">
+            <div className="flex flex-col w-full h-screen font-Orbitron items-center justify-start">
               <div className="flex justify-between items-center w-full mb-5">
-                <h1 className="text-2xl font-bold">Project</h1>
-                <div
-                  onClick={handleNav}
-                  className="rounded shadow-lg bg-white w-9 h-9 text-black p-2 flex justify-center items-center cursor-pointer"
-                >
-                  &#10005;
+                <h1 className="text-2xl font-bold">Kristin</h1>
+                <div onClick={handleNav}>
+                  <CloseIcon />
                 </div>
               </div>
+              <div className="flex flex-col h-full items-center gap-10 w-full">
+                <ul className="uppercase w-full flex-grow flex flex-col items-center gap-5 text-xl py-2  justify-center">
+                  <a href="#about">
+                    <li onClick={() => setNav(false)} className="py-2">
+                      About
+                    </li>
+                  </a>
+                  <a href="#features">
+                    <li onClick={() => setNav(false)} className="py-2">
+                      Features
+                    </li>
+                  </a>
+                  <a href="#roadmap">
+                    <li onClick={() => setNav(false)} className="py-2">
+                      Roadmap
+                    </li>
+                  </a>
+                  <a href="#partners">
+                    <li onClick={() => setNav(false)} className="py-2">
+                      Partners
+                    </li>
+                  </a>
+                  <a href="#contact">
+                    <li onClick={() => setNav(false)} className="py-2">
+                      Contact
+                    </li>
+                  </a>
+                  <a href="#team">
+                    <li onClick={() => setNav(false)} className="py-2">
+                      Team
+                    </li>
+                  </a>
+                </ul>
 
-              <ul className="uppercase w-full h-fit flex flex-col items-center gap-10 text-xl py-3  justify-center">
-                <a href="#about">
-                  <li onClick={() => setNav(false)} className="py-4">
-                    About
-                  </li>
-                </a>
-                <a href="#features">
-                  <li onClick={() => setNav(false)} className="py-4">
-                    Features
-                  </li>
-                </a>
-                <a href="#partners">
-                  <li onClick={() => setNav(false)} className="py-4">
-                    Partners
-                  </li>
-                </a>
-                <a href="#roadmap">
-                  <li onClick={() => setNav(false)} className="py-4">
-                    Roadmap
-                  </li>
-                </a>
-                <a href="#team">
-                  <li onClick={() => setNav(false)} className="py-4">
-                    Team
-                  </li>
-                </a>
-              </ul>
+                <div className="flex flex-col items-center gap-5 border-t border-gray-500 pt-5 w-full">
+                  <h2 className="font-bold text-xl mb-3">Join Us</h2>
+                  <div className="flex gap-5">
+                    <img src={Twitter} alt="twitter" className="h-12" />
+                    <img src={Discord} alt="Discord" className="h-12" />
+                    <img src={Telegram} alt="Telegram" className="h-12" />
+                  </div>
+                </div>
+              </div>
             </div>
 
             {/* <div className="py-4 flex flex-col">

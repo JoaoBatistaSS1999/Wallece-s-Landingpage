@@ -1,6 +1,6 @@
 const Technologies = () => {
   return (
-    <div className="w-full flex justify-center bg-black">
+    <div id="partners" className="w-full flex justify-center bg-black">
       <section className="p-6 max-w-screen-2xl dark:text-gray-100">
         <div className="container p-4 mx-auto text-center">
           <h2 className="text-4xl font-bold mb-20">
