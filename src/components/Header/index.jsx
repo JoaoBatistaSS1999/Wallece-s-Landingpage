@@ -50,69 +50,10 @@ const Header = () => {
 
           <AppButton />
         </div>
-
-        {/* <div className="hidden lg:flex justify-center items-center gap-5">
-          <ul className="flex justify-center items-center mr-3 gap-7 text-md font-semibold text-white">
-            <a href="#about">
-              <li className="hover:text-[#7100E2] hover:underline-offset-4 transition-all ease-in-out duration-500">
-                About
-              </li>
-            </a>
-            <a href="#features">
-              <li className="hover:text-[#7100E2] hover:underline-offset-4 transition-all ease-in-out duration-500">
-                Features
-              </li>
-            </a>
-            <a href="#partners">
-              <li className="hover:text-[#7100E2] hover:underline-offset-4 transition-all ease-in-out duration-500">
-                Partners
-              </li>
-            </a>
-            <a href="#roadmap">
-              <li className="hover:text-[#7100E2] hover:underline-offset-4 transition-all ease-in-out duration-500">
-                Roadmap
-              </li>
-            </a>
-            <a href="#team">
-              <li className="hover:text-[#7100E2] hover:underline-offset-4 transition-all ease-in-out duration-500">
-                Team
-              </li>
-            </a>
-          </ul>
-          <a
-            href="https://www.youtube.com/watch?v=X791IzOwt3Q&list=RDNl-RVIdTUVI&index=7"
-            target="_blank"
-            rel="noreferrer"
-            className="font-Orbitron"
-          >
-            <button className="py-2 px-3 bg-[#7100E2] rounded-lg text-white font-Orbitron font-bold hover:bg-[#470687] transition-all ease-in-out duration-300">
-              Launch App
-            </button>
-          </a>
-        </div> */}
       </div>
       <div className="flex items-center gap-4">
         <div className="flex justify-center items-center lg:hidden">
           <HamburgerIcon onClick={handleNav} />
-          {/* <button
-            onClick={handleNav}
-            className="p-2 text-gray-600 bg-gray-100 rounded transition hover:text-gray-600/75"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="w-5 h-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              stroke-width="2"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-          </button> */}
         </div>
         {/* Side Drawer Menu */}
         <div
