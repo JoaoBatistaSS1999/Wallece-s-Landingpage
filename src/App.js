@@ -1,7 +1,28 @@
-function App() {
-  const secret = process.env.REACT_APP_BASE_URL;
+import React from "react";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import Gallery from "./components/Gallery";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import Roadmap from "./components/Roadmap";
+import Team from "./components/Team";
+import Technologies from "./components/Technologies";
 
-  return <div className='bg-black text-white'>wasd {secret}</div>;
+function App() {
+  return (
+    <div className="selection:bg-[#7100E2] selection:text-black">
+      <Header />
+      <Hero />
+      <About />
+      <Gallery />
+      <Roadmap />
+      <Technologies />
+      <Contact />
+      <Team />
+      <Footer />
+    </div>
+  );
 }
 
 export default App;
