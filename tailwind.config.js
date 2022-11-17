@@ -7,5 +7,5 @@ module.exports = {
       ChakraPetch: ["Chakra Petch", "sans-serif"],
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar")({ nocompatible: true })],
 };

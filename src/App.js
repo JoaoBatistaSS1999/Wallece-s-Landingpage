@@ -12,7 +12,7 @@ import Technologies from "./components/Technologies";
 
 function App() {
   return (
-    <div className="selection:bg-[#7100E2] selection:text-black">
+    <div className="selection:bg-[#3eda0a] selection:text-black scrollbar-thin scrollbar-thumb-[#750edb] scrollbar-thumb-rounded-lg h-screen">
       <Header />
       <Hero />
       <About />
