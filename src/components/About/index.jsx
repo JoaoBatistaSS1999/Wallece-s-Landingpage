@@ -1,112 +1,68 @@
+import SVGIcon from "../UI/SVGIcon";
+
 const About = () => {
   return (
     <div
       id="about"
       className="w-full flex justify-center py-20 bg-[#161616] text-white"
     >
-      <section className="max-w-screen-2xl w-full flex justify-between items-center">
-        <div className="w-[500px] h-[600px] bg-[#3c3c3c] rounded-2xl"></div>
+      <section className="max-w-screen-2xl w-full flex flex-wrap justify-center items-center gap-10 2xl:gap-0">
+        <div className="w-[500px] h-[400px] lg:h-[600px] bg-[#d3d1d1] mx-4 rounded-2xl"></div>
 
-        <div className="">
-          <div className="p-4 text-center md:px-10 lg:px-32 xl:max-w-3xl">
+        <div className="flex flex-col">
+          {/* top */}
+          <div className="lg:max-w-4xl w-full flex flex-col justify-center items-center mb-5">
             <h2 className="text-2xl font-bold leading-none sm:text-4xl">
               Quo et liber recusabo
             </h2>
-            <p className="px-8 my-4">
+            <p className="px-8 my-4 lg:max-w-[60%] text-center">
               Graeco causae vim cu, alii option ancillae sea ut. Ad mea alii
               pertinax, ei sed falli ponderum adipisci. Vis iisque scripta cu.
               Sea ex mollis consulatu dissentiet, dicta viris volutpat mea an,
               et nec discere epicuri
             </p>
           </div>
-          <div className="flex">
-            <div className="grid gap-12 py-4 text-center sm:grid-cols-2 col-span-full md:col-span-4 md:text-left">
+          {/* paragraphs */}
+          <div className="flex justify-center">
+            <div className="max-w-3xl w-full flex flex-wrap justify-center gap-5 p-4">
               <div className="flex flex-col items-center justify-center space-y-3 max-w-xs md:justify-start md:items-start">
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="w-6 h-6 dark:text-violet-400"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"
-                  ></path>
-                </svg>
+                <SVGIcon />
                 <h5 className="text-xl font-semibold">
                   Est facilisis necessitatibus ea
                 </h5>
-                <p>
+                <p className="text-center sm:text-start">
                   Ex audiam inermis elaboraret eam, oratio petentium ne cum,
                   mundi interesset sit no.
                 </p>
               </div>
               <div className="flex flex-col items-center justify-center space-y-3 max-w-xs md:justify-start md:items-start">
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="w-6 h-6 dark:text-violet-400"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"
-                  ></path>
-                </svg>
-                <h5 className="text-xl font-semibold">Vim iudico iisque te</h5>
-                <p>
-                  At cibo possim impetus pro, ius id mutat commodo offendit. Cum
-                  inani pertinax definitiones ad.
-                </p>
-              </div>
-              <div className="flex flex-col items-center justify-center space-y-3 max-w-xs md:justify-start md:items-start">
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="w-6 h-6 dark:text-violet-400"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"
-                  ></path>
-                </svg>
-                <h5 className="text-xl font-semibold">Sea inani viris at</h5>
-                <p>
-                  Et eos atomorum urbanitas accommodare, in suscipit petentium
-                  vis. Pro ea nibh praesent postulant.
-                </p>
-              </div>
-              <div className="flex flex-col items-center justify-center space-y-3 max-w-xs md:justify-start md:items-start">
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="w-6 h-6 dark:text-violet-400"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-                  ></path>
-                </svg>
+                <SVGIcon />
                 <h5 className="text-xl font-semibold">
-                  Error nihil primis sit ut
+                  Est facilisis necessitatibus ea
                 </h5>
-                <p>
-                  Eu vis urbanitas scripserit, civibus scripserit pro id. Omnes
-                  congue contentiones te eos.
+                <p className="text-center sm:text-start">
+                  Ex audiam inermis elaboraret eam, oratio petentium ne cum,
+                  mundi interesset sit no.
+                </p>
+              </div>
+              <div className="flex flex-col items-center justify-center space-y-3 max-w-xs md:justify-start md:items-start">
+                <SVGIcon />
+                <h5 className="text-xl font-semibold">
+                  Est facilisis necessitatibus ea
+                </h5>
+                <p className="text-center sm:text-start">
+                  Ex audiam inermis elaboraret eam, oratio petentium ne cum,
+                  mundi interesset sit no.
+                </p>
+              </div>
+              <div className="flex flex-col items-center justify-center space-y-3 max-w-xs md:justify-start md:items-start">
+                <SVGIcon />
+                <h5 className="text-xl font-semibold">
+                  Est facilisis necessitatibus ea
+                </h5>
+                <p className="text-center sm:text-start">
+                  Ex audiam inermis elaboraret eam, oratio petentium ne cum,
+                  mundi interesset sit no.
                 </p>
               </div>
             </div>
