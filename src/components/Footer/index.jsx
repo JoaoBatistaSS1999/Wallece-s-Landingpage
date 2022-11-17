@@ -10,19 +10,21 @@ const Footer = () => {
         aria-label="Site Footer"
         class="bg-black text-white font-ChakraPetch"
       >
-        <div class="mx-auto max-w-screen-xl px-4 pt-16 pb-6 sm:px-6 lg:px-8 lg:pt-24">
-          <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+        <div class="mx-auto max-w-screen-xl sm:px-4 px-1 pt-16 pb-6 lg:px-8 lg:pt-24">
+          <div className="flex flex-col gap-10 items-center lg:flex-row lg:items-start justify-between">
             <div className="font-ChakraPetch">
               <div class="flex justify-center text-teal-600 sm:justify-start"></div>
-              <h2 className="text-[50px] font-bold">Logo</h2>
-              <p class="mt-2 max-w-md text-center leading-relaxed sm:mx-0 sm:max-w-xs sm:text-left">
+              <h2 className="text-[50px] text-center lg:text-start font-bold">
+                Logo
+              </h2>
+              <p class="mt-2 max-w-md text-center lg:text-start leading-relaxed sm:mx-0 sm:max-w-xs">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Incidunt consequuntur amet culpa cum itaque neque.
               </p>
             </div>
 
-            <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4 lg:col-span-2">
-              <div class="text-center sm:text-left">
+            <div className="max-w-[500px] w-full flex justify-center sm:gap-2 flex-wrap">
+              <div class="text-center sm:text-left max-w-[150px] mb-10 w-full">
                 <p class="text-2xl font-bold cursor-pointer">About</p>
 
                 <nav aria-label="Footer Services Nav" class="mt-4">
@@ -69,7 +71,7 @@ const Footer = () => {
                 </nav>
               </div>
 
-              <div class="text-center sm:text-left">
+              <div class="text-center sm:text-left max-w-[150px] mb-10 w-full">
                 <p class="text-2xl font-bold cursor-pointer">Sections</p>
 
                 <nav aria-label="Footer Services Nav" class="mt-4">
@@ -84,9 +86,7 @@ const Footer = () => {
                       <li className="cursor-pointer hover:text-gray-400">
                         <a href="#roadmap">Roadmap</a>
                       </li>
-                      <li className="cursor-pointer hover:text-gray-400">
-                        <a href="#contact">Contact</a>
-                      </li>
+
                       <li className="cursor-pointer hover:text-gray-400">
                         <a href="#team">Team</a>
                       </li>
@@ -95,7 +95,7 @@ const Footer = () => {
                 </nav>
               </div>
 
-              <div class="text-center sm:text-left">
+              <div class="text-center sm:text-left max-w-[150px] mb-10 w-full">
                 <p class="text-2xl font-bold cursor-pointer">Contact</p>
 
                 <nav aria-label="Footer Services Nav" class="mt-4">
@@ -141,46 +141,45 @@ const Footer = () => {
                   </ul>
                 </nav>
               </div>
+            </div>
+            <div className="flex flex-col w-fit">
+              <ul className="w-full flex justify-center items-center gap-2">
+                <a
+                  href="https://www.figma.com/file/1w6lQw5HVWrL36V7qFQlLq/Arc's-Landingpage?node-id=2%3A44"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <li>
+                    <img src={twitter} alt="twitter" className="h-9" />
+                  </li>
+                </a>
 
-              <div className="flex flex-col">
-                <ul className="w-full flex justify-center items-center gap-5">
-                  <a
-                    href="https://www.figma.com/file/1w6lQw5HVWrL36V7qFQlLq/Arc's-Landingpage?node-id=2%3A44"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <li>
-                      <img src={twitter} alt="twitter" className="h-9" />
-                    </li>
-                  </a>
+                <a
+                  href="https://www.figma.com/file/1w6lQw5HVWrL36V7qFQlLq/Arc's-Landingpage?node-id=2%3A44"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <li>
+                    <img src={discord} alt="discord" className="h-9" />
+                  </li>
+                </a>
 
-                  <a
-                    href="https://www.figma.com/file/1w6lQw5HVWrL36V7qFQlLq/Arc's-Landingpage?node-id=2%3A44"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <li>
-                      <img src={discord} alt="discord" className="h-9" />
-                    </li>
-                  </a>
-
-                  <a
-                    href="https://www.figma.com/file/1w6lQw5HVWrL36V7qFQlLq/Arc's-Landingpage?node-id=2%3A44"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <li>
-                      <img src={medium} alt="medium" className="h-9" />
-                    </li>
-                  </a>
-                </ul>
-                <div className="w-full mt-10 flex justify-end items-center">
-                  <a href="#" className="">
-                    <div className="flex bg-white hover:bg-[#9754da] ease-in-out duration-500 rounded-xl w-fit p-3 justify-center items-center">
-                      <img src={top} alt="" className="h-6 sm:h-10 sm:w-10" />
-                    </div>
-                  </a>
-                </div>
+                <a
+                  href="https://www.figma.com/file/1w6lQw5HVWrL36V7qFQlLq/Arc's-Landingpage?node-id=2%3A44"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <li>
+                    <img src={medium} alt="medium" className="h-9" />
+                  </li>
+                </a>
+              </ul>
+              <div className="w-full mt-10 flex justify-center lgjustify-end items-center">
+                <a href="#" className="">
+                  <div className="flex bg-white hover:bg-[#9754da] ease-in-out duration-500 rounded-xl w-fit p-3 justify-center items-center">
+                    <img src={top} alt="" className="h-6 lg:h-10" />
+                  </div>
+                </a>
               </div>
             </div>
           </div>
