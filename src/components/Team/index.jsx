@@ -1,11 +1,12 @@
+import styles from "./styles.module.css";
+
 const Team = () => {
   return (
     <div id="team" className="w-full flex justify-center bg-[#161616]">
       <section class="">
         <div class="max-w-screen-2xl w-full px-6 py-10 flex flex-col justify-center items-center">
           <h1 class="text-3xl font-semibold text-center text-gray-800 capitalize lg:text-4xl dark:text-white">
-            Our Executive Team
-            {/* <span>Highlight</span> */}
+            <span className={styles.marquerEffect}>Our Executive Team</span>
           </h1>
 
           <p class="max-w-2xl mx-auto my-6 text-center text-gray-500 dark:text-gray-300">
@@ -17,7 +18,7 @@ const Team = () => {
           <div class="flex flex-wrap max-w-3xl justify-center gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-4">
             <div class="flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-[#45454561] rounded-xl">
               <img
-                class="object-cover w-32 h-32 rounded-full ring-4 ring-[#5e0bb2]"
+                className="object-cover w-32 h-32 rounded-full animate-border bg-gradient-to-r from-purple-400 via-purple-600 to-purple-900 bg-[length:400%_400%] p-1 transition "
                 src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
                 alt=""
               />
@@ -80,7 +81,7 @@ const Team = () => {
 
             <div class="flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-[#45454561] rounded-xl">
               <img
-                class="object-cover w-32 h-32 rounded-full ring-4 ring-[#5e0bb2]"
+                className="object-cover w-32 h-32 rounded-full animate-border bg-gradient-to-r from-purple-400 via-purple-600 to-purple-900 bg-[length:400%_400%] p-1 transition "
                 src="https://images.unsplash.com/photo-1531590878845-12627191e687?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
                 alt=""
               />
@@ -143,7 +144,7 @@ const Team = () => {
 
             <div class="flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-[#45454561] rounded-xl">
               <img
-                class="object-cover w-32 h-32 rounded-full ring-4 ring-[#5e0bb2]"
+                className="object-cover w-32 h-32 rounded-full animate-border bg-gradient-to-r from-purple-400 via-purple-600 to-purple-900 bg-[length:400%_400%] p-1 transition "
                 src="https://images.unsplash.com/photo-1488508872907-592763824245?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
                 alt=""
               />
@@ -206,7 +207,7 @@ const Team = () => {
 
             <div class="flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-[#45454561] rounded-xl">
               <img
-                class="object-cover w-32 h-32 rounded-full ring-4 ring-[#5e0bb2]"
+                className="object-cover w-32 h-32 rounded-full animate-border bg-gradient-to-r from-purple-400 via-purple-600 to-purple-900 bg-[length:400%_400%] p-1 transition "
                 src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
                 alt=""
               />
@@ -269,7 +270,7 @@ const Team = () => {
 
             <div class="flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-[#45454561] rounded-xl">
               <img
-                class="object-cover w-32 h-32 rounded-full ring-4 ring-[#5e0bb2]"
+                className="object-cover w-32 h-32 rounded-full animate-border bg-gradient-to-r from-purple-400 via-purple-600 to-purple-900 bg-[length:400%_400%] p-1 transition "
                 src="https://images.unsplash.com/photo-1499470932971-a90681ce8530?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
                 alt=""
               />
@@ -332,7 +333,7 @@ const Team = () => {
 
             <div class="flex flex-col items-center p-8 transition-colors duration-300 transform cursor-pointer group hover:bg-[#45454561] rounded-xl">
               <img
-                class="object-cover w-32 h-32 rounded-full ring-4 ring-[#5e0bb2]"
+                className="object-cover w-32 h-32 rounded-full animate-border bg-gradient-to-r from-purple-400 via-purple-600 to-purple-900 bg-[length:400%_400%] p-1 transition "
                 src="https://images.unsplash.com/photo-1608174386344-80898cec6beb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
                 alt=""
               />

@@ -1,9 +1,10 @@
-span {
+.marquerEffect {
   position: relative;
+  cursor: pointer;
   z-index: 1;
 }
 
-span::before {
+.marquerEffect::before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -11,13 +12,13 @@ span::before {
   bottom: 0;
   left: -0.25em;
   right: -0.25em;
-  background-color: hsla(341, 97%, 59%, 0.75);
+  background-color: #7100e2;
   transform-origin: center right;
   transform: scaleX(0);
   transition: transform 0.2s ease-in-out;
 }
 
-span:hover::before {
+.marquerEffect:hover::before {
   transform: scaleX(1);
   transform-origin: center left;
 }
