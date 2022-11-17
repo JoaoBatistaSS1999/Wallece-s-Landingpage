@@ -23,7 +23,7 @@ const Header = () => {
         <h1 className="text-2xl cursor-pointer font-bold text-white flex items-center gap-5">
           <img src={HeaderLogo} alt="" />
           <p className="flex justify-end font-thin max-h-full items-end">
-            Kristin
+            Kristim
           </p>
         </h1>
         <div className="hidden lg:flex gap-5">
@@ -72,7 +72,7 @@ const Header = () => {
           >
             <div className="flex flex-col w-full h-screen font-Orbitron items-center justify-start">
               <div className="flex justify-between items-center w-full mb-5">
-                <h1 className="text-2xl font-bold">Kristin</h1>
+                <h1 className="text-2xl font-bold">Kristim</h1>
                 <div onClick={handleNav}>
                   <CloseIcon />
                 </div>
