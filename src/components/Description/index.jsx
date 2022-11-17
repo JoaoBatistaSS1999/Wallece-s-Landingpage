@@ -4,7 +4,7 @@ const Description = () => {
       id="features"
       className="w-full flex justify-center py-20 px-2 font-ChakraPetch"
     >
-      <div className="max-w-screen-2xl w-full flex gap-20 flex-wrap justify-center border border-yellow-400">
+      <div className="max-w-screen-2xl w-full flex gap-20 flex-wrap justify-center">
         <ul className="flex flex-col gap-7">
           <li className="text-center lg:text-end">
             <h3 className="text-2xl font-bold">
