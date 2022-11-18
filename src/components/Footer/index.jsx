@@ -175,7 +175,7 @@ const Footer = () => {
                 </a>
               </ul>
               <div className="w-full mt-10 flex justify-center lgjustify-end items-center">
-                <a href="#" className="">
+                <a href="#home">
                   <div className="flex bg-white hover:bg-[#9754da] ease-in-out duration-500 rounded-xl w-fit p-3 justify-center items-center">
                     <img src={top} alt="" className="h-6 lg:h-10" />
                   </div>

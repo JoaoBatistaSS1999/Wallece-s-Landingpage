@@ -4,7 +4,10 @@ import Twitter from "../../Assets/Social/twitter.png";
 
 const Hero = () => {
   return (
-    <section className="w-full h-[calc(100vh-64px)] flex justify-center font-Orbitron items-end bg-[#262626] text-white">
+    <section
+      id="home"
+      className="w-full h-[calc(100vh-64px)] flex justify-center font-Orbitron items-end bg-[#262626] text-white"
+    >
       <div className="max-w-screen-xl w-full flex justify-start px-2 lg:px-10">
         <div className="w-full flex flex-col pb-20 justify-center">
           <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center lg:text-start mb-7">
