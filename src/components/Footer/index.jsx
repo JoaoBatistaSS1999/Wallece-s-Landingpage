@@ -88,7 +88,7 @@ const Footer = () => {
                       </li>
 
                       <li className="cursor-pointer hover:text-gray-400">
-                        <a href="#team">Team</a>
+                        <a href="#contact">Contact</a>
                       </li>
                     </ul>
                   </ul>
@@ -103,7 +103,7 @@ const Footer = () => {
                     <ul class="space-y-4 text-sm">
                       <li className="cursor-pointer hover:text-gray-400">
                         <a
-                          href="https://www.youtube.com/watch?v=YpugK0RpEaU&list=RDQjlFqgRbICY&index=2"
+                          href="https://t.me/wecryptohere"
                           target="_blank"
                           rel="noreferrer"
                         >
@@ -112,7 +112,7 @@ const Footer = () => {
                       </li>
                       <li className="cursor-pointer hover:text-gray-400">
                         <a
-                          href="https://www.youtube.com/watch?v=YpugK0RpEaU&list=RDQjlFqgRbICY&index=2"
+                          href="https://twitter.com/KrstmTech"
                           target="_blank"
                           rel="noreferrer"
                         >
@@ -145,7 +145,7 @@ const Footer = () => {
             <div className="flex flex-col w-fit">
               <ul className="w-full flex justify-center items-center gap-2">
                 <a
-                  href="https://www.figma.com/file/1w6lQw5HVWrL36V7qFQlLq/Arc's-Landingpage?node-id=2%3A44"
+                  href="https://twitter.com/KrstmTech"
                   target="_blank"
                   rel="noreferrer"
                 >

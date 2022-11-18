@@ -71,14 +71,27 @@ const Contact = () => {
           </div>
           <div className="grid justify-center grid-cols-4 p-8 mx-auto space-y-8 lg:space-y-0">
             <div className="flex items-center justify-center lg:col-span-1 col-span-full">
-              <img src={twitter} alt="github" className="h-20" />
+              <a
+                href="https://twitter.com/KrstmTech"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={twitter} alt="github" className="h-20" />
+              </a>
             </div>
             <div className="flex flex-col justify-center max-w-3xl text-center col-span-full lg:col-span-3 lg:text-left">
               <span className="text-xs tracking-wider uppercase dark:text-violet-400">
                 Trending topics
               </span>
               <span className="text-xl font-bold md:text-2xl">
-                Twitter updates
+                <a
+                  href="https://twitter.com/KrstmTech"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="cursor-pointer"
+                >
+                  Twitter updates
+                </a>
               </span>
               <span className="mt-4 dark:text-gray-300">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam

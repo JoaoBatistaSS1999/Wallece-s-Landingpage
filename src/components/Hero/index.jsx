@@ -54,7 +54,7 @@ const Hero = () => {
               <img src={Medium} alt="" className="h-12" />
             </a>
             <a
-              href="https://www.youtube.com/watch?v=8LVkcXA6Wxc"
+              href="https://twitter.com/KrstmTech"
               target="_blank"
               rel="noreferrer"
             >
